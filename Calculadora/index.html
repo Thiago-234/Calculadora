@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=backspace" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fundo">
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+        <p id="resul"></p>
+        <table>
+            <th>
+                <tr>
+                    <td><button class="botao" onclick="limpar()">C</button></td>
+                    <td><button class="botao" style="padding: 16px;" onclick="apagar()">⌫</button></td>
+                    <td><button class="botao" onclick="digitarN('/')">/</button></td>
+                    <td><button class="botao" onclick="digitarN('*')">X</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="digitarN('7')">7</button></td>
+                    <td><button class="botao" onclick="digitarN('8')">8</button></td>
+                    <td><button class="botao" onclick="digitarN('9')">9</button></td>
+                    <td><button class="botao" onclick="digitarN('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="digitarN('4')">4</button></td>
+                    <td><button class="botao" onclick="digitarN('5')">5</button></td>
+                    <td><button class="botao" onclick="digitarN('6')">6</button></td>
+                    <td><button class="botao" onclick="digitarN('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="digitarN('1')">1</button></td>
+                    <td><button class="botao" onclick="digitarN('2')">2</button></td>
+                    <td><button class="botao" onclick="digitarN('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 130px;" onclick="calc()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" style="width: 110px;" onclick="digitarN('0')">0</button></td>
+                    <td><button class="botao" onclick="digitarN('.')">.</button></td>
+                </tr>
+        </table>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
